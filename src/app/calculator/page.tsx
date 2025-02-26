@@ -57,7 +57,7 @@ const MortgageCalculator = () => {
   // Add useEffect to recalculate when inputs change
   useEffect(() => {
     handleInputChange();
-  }, [homePrice, downPayment, interestRate, loanTerm]);
+  }, [homePrice, downPayment, interestRate, loanTerm, handleInputChange]);
 
   // Update your home price input handler
   const handleHomePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {

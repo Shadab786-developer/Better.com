@@ -28,7 +28,7 @@ const Home = () => {
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <g clip-path="url(#clip0_328_5133)">
+                  <g clipPath="url(#clip0_328_5133)">
                     <path
                       d="M23.9998 12.2755C23.9998 11.4598 23.9324 10.6397 23.7884 9.83716H12.2405V14.4581H18.8534C18.579 15.9485 17.6973 17.2669 16.4062 18.1047V21.103H20.3515C22.6683 19.013 23.9998 15.9264 23.9998 12.2755Z"
                       fill="#4285F4"
@@ -68,6 +68,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <p>Let&apos;s find your perfect home loan</p>
 
       {/* Testimonial Section */}
       <section className="bg-white py-16">
@@ -116,6 +118,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+      <div>We&apos;re here to help!</div>
 
       {/* FAQ Section */}
       <section className="bg-green-50 py-16">

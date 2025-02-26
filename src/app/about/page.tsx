@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -23,8 +26,8 @@ const About = () => {
               The traditional process around homeownership is opaque and
               outdated. The real-estate ecosystem is slow, expensive, and
               extremely complicated. We have reimagined the entire home-buying
-              experience. It&apos;s faster, more affordable, and better for
-              everyone. Read how CEO Vivek Garig explains how we will fix it.
+              experience. It;s faster, more affordable, and better for everyone.
+              Read how CEO Vivek Garig explains how we will fix it.
             </p>
             <a href="#" className="text-green-600 font-semibold">
               Read Vivek's story
@@ -32,7 +35,7 @@ const About = () => {
           </div>
           <div className="flex justify-center items-center">
             {/* Placeholder for the video image */}
-            <img
+            <Image
               src="https://media.better.com/video/vishal-mission.jpg"
               alt="CEO Image"
               className="rounded-lg shadow-lg"
@@ -61,6 +64,8 @@ const About = () => {
           </p>
         </div>
       </section>
+      <p>We&apos;re here to help you find the perfect mortgage solution.</p>
+      <div>Let&apos;s start your journey today!</div>
     </div>
   );
 };
