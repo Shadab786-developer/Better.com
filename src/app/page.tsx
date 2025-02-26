@@ -90,9 +90,9 @@ const Home = () => {
             <div className="w-1/2">
               <div className="bg-gray-200 p-6 rounded-lg">
                 <p className="text-xl mb-4">
-                  "The reason why I decided to go with Better is because after I
-                  did my research with the other lenders, Better was the one
-                  that provided me with the lowest interest rate."
+                  &quot;The reason why I decided to go with Better is because
+                  after I did my research with the other lenders, Better was the
+                  one that provided me with the lowest interest rate.&quot;
                 </p>
                 <span className="font-bold text-lg">
                   Adrian - Better Mortgage customer
@@ -121,7 +121,7 @@ const Home = () => {
       <section className="bg-green-50 py-16">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Got questions? We've got answers
+            Got questions? We&apos;ve got answers
           </h2>
           <div className="flex justify-center space-x-8">
             <button className="bg-white text-green-800 py-2 px-4 rounded-lg shadow-lg hover:bg-green-100 transition duration-300">

@@ -9,18 +9,15 @@ const Header = () => {
   return (
     <>
       <header className="flex justify-between items-center p-4 bg-white shadow-md fixed z-10 w-screen">
-        {/* Logo Section */}
         <div className="font-bold text-xl">Better</div>
 
-        {/* Right side - Icons and Buttons */}
         <div className="flex items-center space-x-6">
-          {/* Phone Icon */}
           <button className="border border-gray-300 rounded-full p-2">
             <svg
               width="19"
               height="18"
               viewBox="0 0 19 18"
-              className="transition-all ease-in-out group-hover:[&amp;_path]:fill-interactiveForegroundInversePrimary [&amp;_path]:fill-white h-3 w-3 md:h-4 md:w-4"
+              className="transition-all ease-in-out group-hover:[&_path]:fill-interactiveForegroundInversePrimary [&_path]:fill-white h-3 w-3 md:h-4 md:w-4"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -30,15 +27,13 @@ const Header = () => {
               ></path>
             </svg>
           </button>
-          {/* Get Started Button */}
           <Link href="/start">
             <button className="bg-green-700 text-white py-2 px-4 rounded-2xl hover:bg-green-900 transition duration-300">
               Get Started
             </button>
           </Link>
-          {/* Hamburger Icon for Mobile */}
           <button
-            className="lg:hidden text-gray-700 z-[100] "
+            className="lg:hidden text-gray-700 z-[100]"
             onClick={() => setIsActive({ sideNav: !isactive.sideNav })}
           >
             <svg
@@ -60,14 +55,9 @@ const Header = () => {
       </header>
       {isactive.sideNav && (
         <div className="mt-16">
-          {/* Side Navigation */}
-          <div
-            className={`lg:flex lg:items-start lg:space-x-6 lg:px-8 lg:py-4 absolute bg-white w-screen p-6 shadow-md space-y-6 lg:relative z-[100] " `}
-          >
-            {/* Logo */}
+          <div className="lg:flex lg:items-start lg:space-x-6 lg:px-8 lg:py-4 absolute bg-white w-screen p-6 shadow-md space-y-6 lg:relative z-[100]">
             <div className="text-2xl font-bold">Better</div>
 
-            {/* Navigation Links */}
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-lg">
                 <span>Buy</span>
@@ -156,7 +146,6 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Contact Section */}
             <div className="bg-green-100 text-center py-3 mt-6 rounded-lg">
               <p className="text-gray-700">
                 <span className="font-bold text-gray-800">

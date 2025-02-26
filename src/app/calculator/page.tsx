@@ -81,9 +81,9 @@ const MortgageCalculator = () => {
         Mortgage Calculator
       </h1>
       <p className="text-lg text-center mb-6">
-        Our mortgage calculator includes key factors like homeowners association
-        fees, property taxes, and private mortgage insurance (PMI). Get the
-        whole picture and calculate your total monthly payment.
+        Our mortgage calculator includes key factors like homeowners&apos;
+        association fees, property taxes, and private mortgage insurance (PMI).
+        Get the whole picture and calculate your total monthly payment.
       </p>
 
       <div className="flex mb-6 justify-between">
@@ -273,7 +273,7 @@ const MortgageCalculator = () => {
           pieces to determine is whether a home will fit into your monthly
           budget. A mortgage calculator helps you understand the monthly cost of
           a home. And allows you to enter different loan amounts and interest
-          rates to help determine what’s affordable for you.
+          rates to help determine what&apos;s affordable for you.
         </p>
       </div>
     </div>

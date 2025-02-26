@@ -11,13 +11,15 @@ export default function StartScreen() {
       {/* Hero Section */}
       <div className="text-center mb-12">
         <img
-          src="https://media.better.com/components/preapproval/industry-parity-v2/betty1.jpg" // Make sure to place your logo or replace this with an actual image
+          src="https://media.better.com/components/preapproval/industry-parity-v2/betty1.jpg"
           alt="Better Mortgage"
           width={120}
           height={40}
           className="rounded-full ml-8"
         />
-        <h1 className="text-3xl font-semibold text-gray-900">Hi, I'm Betsy!</h1>
+        <h1 className="text-3xl font-semibold text-gray-900">
+          Hi, I&apos;m Betsy!
+        </h1>
         <p className="text-lg text-gray-600 mt-4">What can I help you with?</p>
       </div>
 
@@ -41,7 +43,7 @@ export default function StartScreen() {
               fill="#017848"
             ></path>
           </svg>
-          <span className="text-lg  pr-40 ">Buying a home</span>
+          <span className="text-lg pr-40">Buying a home</span>
         </button>
 
         <button
@@ -71,7 +73,7 @@ export default function StartScreen() {
               fill="#017848"
             ></path>
           </svg>
-          <span className="text-lg  pr-40 ">Refinance my mortgage</span>
+          <span className="text-lg pr-40">Refinance my mortgage</span>
         </button>
 
         <button className="flex items-center justify-start space-x-8 w-full py-3 px-4 rounded-lg shadow-lg border-2 border-gray-500 hover:border-4  hover:border-green-800 hover:text-green-900 font-bold">
@@ -94,7 +96,7 @@ export default function StartScreen() {
               fill="#017848"
             ></path>
           </svg>
-          <span className="text-lg  pr-40 ">Get cash from my home</span>
+          <span className="text-lg pr-40">Get cash from my home</span>
         </button>
       </div>
 
@@ -113,7 +115,7 @@ export default function StartScreen() {
       {/* Additional Information Section */}
       <div className="bg-green-50 p-4 rounded-lg text-center">
         <p className="text-sm text-green-700">
-          After a few questions, you'll unlock:
+          After a few questions, you&apos;ll unlock:
         </p>
         <div className="mt-2 space-y-1">
           <div className="flex items-center justify-center space-x-2">

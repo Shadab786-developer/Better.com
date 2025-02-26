@@ -15,8 +15,8 @@ const Footer = () => {
           <div className="mt-6 space-y-4">
             <h3 className="font-semibold text-lg">Better Mortgage</h3>
             <p className="text-gray-600">
-              We can’t wait to say “Welcome home.” Apply 100% online, with
-              expert customer support.
+              We can&apos;t wait to say &quot;Welcome home.&quot; Apply 100%
+              online, with expert customer support.
             </p>
 
             <h3 className="font-semibold text-lg mt-4">Better Real Estate</h3>
@@ -222,7 +222,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="flex justify-center items-center mt-8 space-x-4 text-gray-600">
         <span className="text-xs">
-          © 2025 Better, Inc. All rights reserved.
+          &copy; 2025 Better, Inc. All rights reserved.
         </span>
         <div className="flex space-x-2">
           <a href="#" className="text-xs text-gray-600 hover:text-green-700">

@@ -23,8 +23,8 @@ const About = () => {
               The traditional process around homeownership is opaque and
               outdated. The real-estate ecosystem is slow, expensive, and
               extremely complicated. We have reimagined the entire home-buying
-              experience. It's faster, more affordable, and better for everyone.
-              Read how CEO Vivek Garig explains how we will fix it.
+              experience. It&apos;s faster, more affordable, and better for
+              everyone. Read how CEO Vivek Garig explains how we will fix it.
             </p>
             <a href="#" className="text-green-600 font-semibold">
               Read Vivek's story
@@ -50,14 +50,14 @@ const About = () => {
           <p className="text-lg mb-8">
             Homeownership is a huge part of our economy. Housing accounts for $2
             trillion industries, and mortgage accounts for $15 trillion. We have
-            moved mortgage processing to a much faster standard — transforming
-            the mortgage experience and speeding up how homeowners finance their
-            homes.
+            moved mortgage processing to a much faster standard &mdash;
+            transforming the mortgage experience and speeding up how homeowners
+            finance their homes.
           </p>
           <p className="text-lg">
-            That's why we believe in a simple, fast, and transparent process.
-            With tech, we're making it better and more efficient for everyone to
-            help make it finally work for all people.
+            That&apos;s why we believe in a simple, fast, and transparent
+            process. With tech, we&apos;re making it better and more efficient
+            for everyone to help make it finally work for all people.
           </p>
         </div>
       </section>
