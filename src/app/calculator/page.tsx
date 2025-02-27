@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 
 const MortgageCalculator = () => {
   const [homePrice, setHomePrice] = useState(0);
@@ -44,7 +44,7 @@ const MortgageCalculator = () => {
   };
 
   // Update handleInputChange function
-  const handleInputChange = () => {
+  const handleInputChange = useCallback(() => {
     const newMonthlyPayment = calculateMonthlyPayment(
       homePrice,
       downPayment,
@@ -52,12 +52,12 @@ const MortgageCalculator = () => {
       loanTerm
     );
     setMonthlyPayment(newMonthlyPayment);
-  };
+  }, [homePrice, downPayment, interestRate, loanTerm]);
 
   // Add useEffect to recalculate when inputs change
   useEffect(() => {
     handleInputChange();
-  }, [homePrice, downPayment, interestRate, loanTerm, handleInputChange]);
+  }, [handleInputChange]);
 
   // Update your home price input handler
   const handleHomePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -81,9 +81,9 @@ const MortgageCalculator = () => {
         Mortgage Calculator
       </h1>
       <p className="text-lg text-center mb-6">
-        Our mortgage calculator includes key factors like homeowners&apos;
+        {`Our mortgage calculator includes key factors like homeowner's
         association fees, property taxes, and private mortgage insurance (PMI).
-        Get the whole picture and calculate your total monthly payment.
+        Get the whole picture and calculate your total monthly payment.`}
       </p>
 
       <div className="flex mb-6 justify-between">
@@ -109,7 +109,13 @@ const MortgageCalculator = () => {
               min="832"
               max="15799"
               value={formatCurrency(monthlyPayment)}
-              onChange={(e) => setHomePrice(e.target.value)}
+              onChange={(e) => {
+                const value = e.target.value.replace(/[^0-9.]/g, "");
+                const numValue = Number(value);
+                if (!isNaN(numValue)) {
+                  setMonthlyPayment(numValue);
+                }
+              }}
               className="w-full"
             />
           </div>
@@ -194,7 +200,13 @@ const MortgageCalculator = () => {
           <input
             type="number"
             value={(homePrice * 20) / 100}
-            onChange={(e) => setDownPayment(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value.replace(/[^0-9.]/g, "");
+              const numValue = Number(value);
+              if (!isNaN(numValue)) {
+                setDownPayment(numValue);
+              }
+            }}
             className="w-full px-4 py-2 border rounded-md shadow-sm"
           />
         </div>
@@ -205,7 +217,13 @@ const MortgageCalculator = () => {
           <input
             type="number"
             value={interestRate}
-            onChange={(e) => setInterestRate(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value.replace(/[^0-9.]/g, "");
+              const numValue = Number(value);
+              if (!isNaN(numValue)) {
+                setInterestRate(numValue);
+              }
+            }}
             className="w-full px-4 py-2 border rounded-md shadow-sm"
           />
         </div>
@@ -213,7 +231,13 @@ const MortgageCalculator = () => {
           <label className="block text-lg font-semibold">Loan Term</label>
           <select
             value={loanTerm}
-            onChange={(e) => setLoanTerm(e.target.value)}
+            onChange={(e) => {
+              const value = e.target.value.replace(/[^0-9.]/g, "");
+              const numValue = Number(value);
+              if (!isNaN(numValue)) {
+                setLoanTerm(numValue);
+              }
+            }}
             className="w-full px-4 py-2 border rounded-md shadow-sm"
           >
             <option value={15}>15 years</option>
@@ -269,11 +293,11 @@ const MortgageCalculator = () => {
       <div className="mt-6 text-center">
         <p className="text-lg">How does a mortgage calculator help me?</p>
         <p className="text-base">
-          When deciding how much house you can afford, one of the most important
+          {` When deciding how much house you can afford, one of the most important
           pieces to determine is whether a home will fit into your monthly
           budget. A mortgage calculator helps you understand the monthly cost of
           a home. And allows you to enter different loan amounts and interest
-          rates to help determine what&apos;s affordable for you.
+          rates to help determine what's affordable for you.`}
         </p>
       </div>
     </div>

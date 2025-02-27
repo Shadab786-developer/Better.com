@@ -29,9 +29,9 @@ const About = () => {
               experience. It;s faster, more affordable, and better for everyone.
               Read how CEO Vivek Garig explains how we will fix it.
             </p>
-            <a href="#" className="text-green-600 font-semibold">
-              Read Vivek's story
-            </a>
+            <span className="text-green-600 font-semibold">
+              Read Viveks story
+            </span>
           </div>
           <div className="flex justify-center items-center">
             {/* Placeholder for the video image */}
@@ -39,6 +39,8 @@ const About = () => {
               src="https://media.better.com/video/vishal-mission.jpg"
               alt="CEO Image"
               className="rounded-lg shadow-lg"
+              width={500}
+              height={300}
             />
           </div>
         </div>
@@ -58,14 +60,14 @@ const About = () => {
             finance their homes.
           </p>
           <p className="text-lg">
-            That&apos;s why we believe in a simple, fast, and transparent
-            process. With tech, we&apos;re making it better and more efficient
-            for everyone to help make it finally work for all people.
+            {`That's why we believe in a simple, fast, and transparent
+            process. With tech, we're making it better and more efficient
+            for everyone to help make it finally work for all people.`}
           </p>
         </div>
       </section>
-      <p>We&apos;re here to help you find the perfect mortgage solution.</p>
-      <div>Let&apos;s start your journey today!</div>
+      <p>{`We're here to help you find the perfect mortgage solution.`}</p>
+      <div>{`Let's start your journey today!`}</div>
     </div>
   );
 };

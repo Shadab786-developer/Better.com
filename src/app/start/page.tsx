@@ -15,11 +15,11 @@ export default function StartScreen() {
           alt="Better Mortgage"
           width={120}
           height={40}
-          className="rounded-full ml-8"
+          className="rounded-full w-18 h-18 ml-8"
           priority
         />
         <h1 className="text-3xl font-semibold text-gray-900">
-          Hi, I&apos;m Betsy!
+          {` Hi, I'm Betsy!`}
         </h1>
         <p className="text-lg text-gray-600 mt-4">What can I help you with?</p>
       </div>
@@ -113,7 +113,7 @@ export default function StartScreen() {
       {/* Additional Information Section */}
       <div className="bg-green-50 p-4 rounded-lg text-center">
         <p className="text-sm text-green-700">
-          After a few questions, you&apos;ll unlock:
+          {` After a few questions, you'll unlock:`}
         </p>
         <div className="mt-2 space-y-1">
           <div className="flex items-center justify-center space-x-2">

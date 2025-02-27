@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const Home = () => {
   return (
@@ -59,23 +60,25 @@ const Home = () => {
               </div>
             </div>
             <div className="w-1/3">
-              <img
+              <Image
                 src="https://media.better.com/better-com/homepage/hero-variant-c.webp" // Placeholder image
                 alt="Phone mockup"
                 className="w-full rounded-lg"
+                width={500}
+                height={500}
               />
             </div>
           </div>
         </div>
       </section>
 
-      <p>Let&apos;s find your perfect home loan</p>
+      <p>{`Let's find your perfect home loan`}</p>
 
       {/* Testimonial Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-semibold text-center mb-8">
-            Find out why we're better.
+            {`Find out why we're better.`}
           </h2>
           <div className="flex justify-center items-center space-x-4 mb-6">
             <button className="bg-green-200 text-green-800 py-2 px-4 rounded-lg">
@@ -92,9 +95,9 @@ const Home = () => {
             <div className="w-1/2">
               <div className="bg-gray-200 p-6 rounded-lg">
                 <p className="text-xl mb-4">
-                  &quot;The reason why I decided to go with Better is because
+                  {`"The reason why I decided to go with Better is because
                   after I did my research with the other lenders, Better was the
-                  one that provided me with the lowest interest rate.&quot;
+                  one that provided me with the lowest interest rate."`}
                 </p>
                 <span className="font-bold text-lg">
                   Adrian - Better Mortgage customer
@@ -119,13 +122,13 @@ const Home = () => {
         </div>
       </section>
 
-      <div>We&apos;re here to help!</div>
+      <div>{`We're here to help!`}</div>
 
       {/* FAQ Section */}
       <section className="bg-green-50 py-16">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-semibold text-gray-800 mb-6">
-            Got questions? We&apos;ve got answers
+            {`Got questions? We've got answers`}
           </h2>
           <div className="flex justify-center space-x-8">
             <button className="bg-white text-green-800 py-2 px-4 rounded-lg shadow-lg hover:bg-green-100 transition duration-300">

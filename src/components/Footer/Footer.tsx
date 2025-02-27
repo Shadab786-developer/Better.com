@@ -15,8 +15,8 @@ const Footer = () => {
           <div className="mt-6 space-y-4">
             <h3 className="font-semibold text-lg">Better Mortgage</h3>
             <p className="text-gray-600">
-              We can&apos;t wait to say &quot;Welcome home.&quot; Apply 100%
-              online, with expert customer support.
+              {`We can't wait to say "Welcome home."" Apply 100%
+              online, with expert customer support.`}
             </p>
 
             <h3 className="font-semibold text-lg mt-4">Better Real Estate</h3>
