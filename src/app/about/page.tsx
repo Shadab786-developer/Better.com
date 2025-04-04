@@ -55,9 +55,10 @@ const About = () => {
           <p className="text-lg mb-8">
             Homeownership is a huge part of our economy. Housing accounts for $2
             trillion industries, and mortgage accounts for $15 trillion. We have
-            moved mortgage processing to a much faster standard &mdash;
-            transforming the mortgage experience and speeding up how homeowners
-            finance their homes.
+            moved mortgage processing to a much faster standard by automating
+            the process and using technology to make it easier for transforming
+            the mortgage experience and speeding up how homeowners finance their
+            homes.
           </p>
           <p className="text-lg">
             {`That's why we believe in a simple, fast, and transparent

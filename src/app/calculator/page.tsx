@@ -265,7 +265,7 @@ const MortgageCalculator = () => {
               <p className="font-semibold">${breakdown.propertyTaxes}</p>
             </div>
             <div className="flex-1">
-              <p className="text-sm">Homeowners Insurance</p>
+              <p className="text-sm">Home owners Insurance</p>
               <p className="font-semibold">${breakdown.homeownersInsurance}</p>
             </div>
           </div>
